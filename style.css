@@ -9,7 +9,7 @@
     --color-primary: #00e1ff;
     --color-primary-dark: #015A66;
     --color-accent: #00e7c8;
-    --color-bg: #0017e7;
+    --color-bg: #ffffff;
     --color-text: #b91a1a;
     --color-muted: #0ea300;
     --color-white: #ffffff;
@@ -71,4 +71,45 @@ aside {
  border: 1px solid var(--color-border);
  border-radius: 8px;
  margin-bottom: 20px;
+}
+
+.habilidades{
+    margin-top: 70px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.habilidades table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: o 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.habilidades td{
+    padding:10px;
+    text-align: left;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 20px;
+    background-color: #00e1ff;
+    border-radius: 10px;
+}
+
+.html5{width: 85%; background-color: #00e1ff;}
+.css3{width:70%; background-color: #b91a1a;}
+.JavaScript{width: 60%; background-color: #ddd900;}
+.git-github{width: 45%; background-color: #0ea300;}
+.react{width: 30%; background-color: #015A66;}
+
+.ruta ol{
+    padding-left: 20px;
+    list-style-type:decimal;
 }
