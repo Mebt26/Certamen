@@ -14,33 +14,43 @@
 </head>
 <body>
     <header>
-        <h1>Mi blog personal</h1>
-        <img src="./assets/icono de perfil.png" alt="fotos de amigos" widht="200"height="200">
-        <nav>
-            <a href="sobre mi">Sobre mi</a>
-            <a href="habilidades">Habilidades</a>
-            <a href="proyectos">Proyectos</a>
-            <a href="contacto">Contactos</a>
-        </nav>
+        <div class="container">
+            <nav class="navbar">
+                <ul>
+                    <h1 class="circle">MB</h1>
+                    <li class="letras_navbar">Sobre mí</li>
+                    <li class="letras_navbar">Habilidades</li>
+                    <li class="letras_navbar">Proyectos</li>
+                    <li class="letras_navbar">Contacto</li>
+                </ul>
+            </nav>        
     </header>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main>
-        <section id="sobre mi">
-            <article class="post">
-            <img src="">
+        <div class="flex-container">
+            <div class="content">
+                <h2 class="juntos1">Hola soy Martin Burgos</h2>
+                <h2 class="juntos2">Soy un estudiante de programacion web</h2>
+                <h3 class="juntos3">Soy un estudiante de Segundo año de analista programador me apasiona crear sitios webs y bases de datos</h3>
+                <h3 class="juntos4">Mi objetivo es aprender, descubrir y escribir nuevas soluciones tecnologicas</h3>
+                <section class="sobre-mi">
             <h2>Sobre Mi</h2>
-            <h3>Conóceme un poco mas</h3>
             <p>Soy un Estudiante de Inacap que esta en su <strong>Segundo año</strong> en la carrera de <strong>Analista Programador</strong>,
             me apasiona crear bases de datos y crear o modificar sitios webs, que sean fucionables y tengan un buen apartado visual.</p>
-            </article>
-
-            <article class="post destacado">
+            <blockquote>"Si siempre estas pensando igual, siempre crearas la misma realidad" - Joe Dispenza</blockquote>
+            </section>
+            </div>
+            <div class="image">
+                <img class="recuerdos" src="./assets/icono de perfil.png" alt="fotos de recuerdos">
+            </div>
+        </div>
+            <section class="post destacado">
             <p>Actualmente estoy aprendiendo <strong><em>HTML5, CSS3 y JavaScript</em></strong>, con el objetivo de convertirme de un programador y desarrollador de <strong>Front-End</strong> profesional.
             Me gusta trabajar en equipo y ir aprendiendo o descubrir nuevas tecnologias</p>
             </article>
         </section>
-
+        </div>
             <aside>
         <h3>Datos Personales</h3>
         <ul>
@@ -97,8 +107,6 @@
                     </tr>
                 </tbody>
             </table>
-
-            <article class="competencias">
                 <h2>Competencias Tecnicas</h2>
                 <ul>
                     <li><a href="#">Maquetacion responsiva</a></li>
@@ -106,10 +114,8 @@
                     <li><a href="#">Diseño con Flexbox y Grid</a></li>
                     <li><a href="#">Accesibilidad web (WCAG)</a></li>
                 </ul>
-            </article>
-
-            <article class="ruta">
-                <h2>Ruta de aprendizaje</h2>
+                <article class="ruta">
+                <h3>Ruta de aprendizaje</h3>
                 <ol>
                     <li><a href="#">HTML5 y CSS3 (actual)</a></li>
                     <li><a href="#">JavaScript ES6+</a></li>
@@ -117,6 +123,48 @@
                     <li><a href="#">Node.js y Express</a></li>
                 </ol>
             </article>
+        </section>
+
+        <section class="proyectos">
+            <h2>Algunos de mis trabajos</h2>
+            <div class="galeria">
+                <figure>
+                    <img src="./assets/1.png" alt="notebook">
+                    <figcaption>Portafolio V1</figcaption>
+                    <p>Primera version del portafolio profesional</p>
+                    <a href=""target="_blank">ver reporsitorio</a>
+                </figure>
+                <figure>
+                    <img src="./assets/2.png" alt="pinturas">
+                    <figcaption>Personal</figcaption>
+                    <p>Blog reponsivo con sistemas de articulos y categorias</p>
+                    <a href="" target="=_blank">Ver repositorio</a>
+                </figure>
+                <figure>
+                    <img src="./assets/3.png" alt="herramientas">
+                    <figcaption>Dashboar admin</figcaption>
+                    <p>panel de administracion con graficos y tablas dde datos</p>
+                    <a href="" target="_blank">Ver repositorio</a>
+                </figure>
+                <figure>
+                    <img src="./assets/4.png" alt="telefono">
+                    <figcaption>App Clima</figcaption>
+                    <p>Aplicacion del clima con API externa y diseño reponsivo</p>
+                    <a href="" target="_blank">Ver reporsitorio</a>
+                </figure>
+                <figure>
+                    <img src="./assets/5.png" alt="cohete">
+                    <figcaption>Tienda Online</figcaption>
+                    <p>E-commerce basico con catalogo de productos de carrito</p>
+                    <a href="" target="_blank">Ver repositorio</a>
+                </figure>
+                <figure>
+                    <img src="./assets/6.png" alt="cohete">
+                    <figcaption>Prtafolio V1</figcaption>
+                    <p>Primera version de mi portafolio personal</p>
+                    <a href="" target="_blank">Ver repositorio</a>
+                </figure>
+            </div>
         </section>
 
     </main>
