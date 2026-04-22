@@ -13,42 +13,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav class="navbar">
-                <ul>
-                    <h1 class="circle">MB</h1>
-                    <li class="letras_navbar">Sobre mí</li>
-                    <li class="letras_navbar">Habilidades</li>
-                    <li class="letras_navbar">Proyectos</li>
-                    <li class="letras_navbar">Contacto</li>
-                </ul>
-            </nav>        
-    </header>
+  <header>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <h1 class="circle">MB</h1>
+                <li class="letras_navbar">Sobre mí</li>
+                <li class="letras_navbar">Habilidades</li>
+                <li class="letras_navbar">Proyectos</li>
+                <li class="letras_navbar">Contacto</li>
+            </ul>
+        </nav>        
+    </div>
+</header>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main>
-        <div class="flex-container">
-            <div class="content">
+        <section class="hero">
+        <div class="content">
                 <h2 class="juntos1">Hola soy Martin Burgos</h2>
                 <h2 class="juntos2">Soy un estudiante de programacion web</h2>
                 <h3 class="juntos3">Soy un estudiante de Segundo año de analista programador me apasiona crear sitios webs y bases de datos</h3>
                 <h3 class="juntos4">Mi objetivo es aprender, descubrir y escribir nuevas soluciones tecnologicas</h3>
-                <section class="sobre-mi">
+
+                <div class="image">
+                <img class="recuerdos" src="./assets/icono-de-perfil.png" alt="fotos de recuerdos">
+            </div>
+        <section class="sobre-mi">
             <h2>Sobre Mi</h2>
             <p>Soy un Estudiante de Inacap que esta en su <strong>Segundo año</strong> en la carrera de <strong>Analista Programador</strong>,
             me apasiona crear bases de datos y crear o modificar sitios webs, que sean fucionables y tengan un buen apartado visual.</p>
             <blockquote>"Si siempre estas pensando igual, siempre crearas la misma realidad" - Joe Dispenza</blockquote>
             </section>
             </div>
-            <div class="image">
-                <img class="recuerdos" src="./assets/icono de perfil.png" alt="fotos de recuerdos">
-            </div>
         </div>
             <section class="post destacado">
-            <p>Actualmente estoy aprendiendo <strong><em>HTML5, CSS3 y JavaScript</em></strong>, con el objetivo de convertirme de un programador y desarrollador de <strong>Front-End</strong> profesional.
+            <article>
+                <p>Actualmente estoy aprendiendo <strong><em>HTML5, CSS3 y JavaScript</em></strong>, con el objetivo de convertirme de un programador y desarrollador de <strong>Front-End</strong> profesional.
             Me gusta trabajar en equipo y ir aprendiendo o descubrir nuevas tecnologias</p>
-            </article>
+            </article> 
         </section>
         </div>
             <aside>
@@ -167,15 +170,70 @@
             </div>
         </section>
 
+<section id="contacto" class="contacto">
+    <h2>Envíame un mensaje</h2>
+    
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="asunto">Asunto:</label>
+            <select id="asunto" name="asunto" required>
+                <option value="">Selecciona un asunto</option>
+                <option value="consulta">Consulta</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="soporte">Soporte</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+        </div>
+
+        <button type="submit">Enviar Mensaje</button>
+    </form>
+</section>
+
+    <div class="informacion-contacto">
+        <p><strong>Email:</strong> martin.26burgos@email.com</p>
+        <p><strong>Ubicacion:</strong> Chiguayante, Chile</p>
+        <p><strong>Telefono:</strong> +569 7402 3077</p>
+        <a href="https://github.com/Mebt26/Certamen" target="_blank">github.com/Mebt26</a>
+    </div>
+</section>
+
     </main>
-
     
+    <footer class="main-footer">
+    <div class="footer-top">
+        <div class="footer-brand">
+            <span class="logo-icon">MBT</span>
+            <span class="brand-name">Martin Burgos Trujillo</span>
+        </div>
 
+        <div class="footer-socials">
+            <a href="#" class="social-btn">GH</a>
+            <a href="#" class="social-btn">LI</a>
+            <a href="#" class="social-btn">TW</a>
+            <a href="#" class="social-btn">IG</a>
+        </div>
+    </div>
 
-    
-    <footer>
-        <p>&copy; Martin Burgos Trujillo. Todos los derechos reservados</p>
-    </footer>
+    <hr class="footer-divider">
+
+    <div class="footer-bottom">
+        <p>&copy; Martin Burgos Trujillo. Todos los derechos reservados.</p>
+    </div>
+</footer>
 
 </body>
 </html>
