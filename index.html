@@ -18,6 +18,7 @@
         <nav class="navbar">
             <ul>
                 <h1 class="circle">MB</h1>
+                <li><h3>Martin Burgos Trujillo</h3></li>
                 <li class="letras_navbar">Sobre mí</li>
                 <li class="letras_navbar">Habilidades</li>
                 <li class="letras_navbar">Proyectos</li>
@@ -28,43 +29,58 @@
 </header>
 
     <!-- CONTENIDO PRINCIPAL -->
-    <main>
-        <section class="hero">
-        <div class="content">
+<main>
+    <section class="hero">
+        <div class="contenedor-flex">
+            
+            <div class="tarjeta-blanca">
                 <h2 class="juntos1">Hola soy Martin Burgos</h2>
                 <h2 class="juntos2">Soy un estudiante de programacion web</h2>
-                <h3 class="juntos3">Soy un estudiante de Segundo año de analista programador me apasiona crear sitios webs y bases de datos</h3>
-                <h3 class="juntos4">Mi objetivo es aprender, descubrir y escribir nuevas soluciones tecnologicas</h3>
-
-                <div class="image">
-                <img class="recuerdos" src="./assets/icono-de-perfil.png" alt="fotos de recuerdos">
+                <p>Soy un estudiante de Segundo año de analista programador me apasiona crear sitios webs y bases de datos</p>
+                <p>Mi objetivo es aprender, descubrir y escribir nuevas soluciones tecnologicas</p>
             </div>
+
+            <div class="tarjeta-blanca centro">
+                <div class="image-container">
+                    <div class="profile-circle">
+                        <img class="recuerdos" src="./assets/icono-de-perfil.png" alt="fotos de recuerdos">
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+    </section> 
+
         <section class="sobre-mi">
-            <h2>Sobre Mi</h2>
-            <p>Soy un Estudiante de Inacap que esta en su <strong>Segundo año</strong> en la carrera de <strong>Analista Programador</strong>,
-            me apasiona crear bases de datos y crear o modificar sitios webs, que sean fucionables y tengan un buen apartado visual.</p>
-            <blockquote>"Si siempre estas pensando igual, siempre crearas la misma realidad" - Joe Dispenza</blockquote>
-            </section>
-            </div>
-        </div>
-            <section class="post destacado">
-            <article>
-                <p>Actualmente estoy aprendiendo <strong><em>HTML5, CSS3 y JavaScript</em></strong>, con el objetivo de convertirme de un programador y desarrollador de <strong>Front-End</strong> profesional.
-            Me gusta trabajar en equipo y ir aprendiendo o descubrir nuevas tecnologias</p>
-            </article> 
-        </section>
-        </div>
-            <aside>
-        <h3>Datos Personales</h3>
-        <ul>
-            <li><a href="#">Edad= 22</a></li>
-            <li><a href="#">Ciudad=Chiguayante, Chile</a></li>
-            <li><a href="#">Email:martin.26burgos@gmail.com</a></li>
-            <li><a href="#">Carrera: Analista Programador</a></li>
-            <li><a href="#">Intereses= Ediciones, Mangas, Gaming, Trecking</a></li>
-        </ul>
-    </aside>
+    <h2 class="titulo-sobre-mi">Sobre Mí</h2>
+    <p class="subtitulo-conoceme">Conóceme un poco más</p>
 
+    <div class="contenedor-grid">
+        
+        <article class="descripcion-texto">
+            <p>Mi nombre es <strong>Martin Burgos</strong> y soy un estudiante de Inacap...</p>
+            
+            <blockquote class="cita-autor">
+                "Si siempre estás pensando igual, siempre crearás la misma realidad" — Joe Dispenza
+            </blockquote>
+            
+            <p>Actualmente estoy aprendiendo <em>HTML5, CSS3 y JavaScript</em>...</p>
+        </article>
+
+        <aside class="tarjeta-datos">
+            <h3>Datos Personales</h3>
+            <ul>
+                <li><strong>Edad:</strong> 22</li>
+                <li><strong>Ciudad:</strong> Chiguayante, Chile</li>
+                <li><strong>Email:</strong> martin.26burgos@gmail.com</li>
+                <li><strong>Carrera:</strong> Analista Programador</li>
+                <li><strong>Intereses:</strong> Ediciones, Mangas, Gaming, Trecking</li>
+            </ul>
+        </aside>
+
+    </div> 
+</section>
+</main>
 
         <section id="habilidades">
             <h2>Habilidades</h2>
@@ -110,32 +126,43 @@
                     </tr>
                 </tbody>
             </table>
-                <h2>Competencias Tecnicas</h2>
-                <ul>
-                    <li><a href="#">Maquetacion responsiva</a></li>
-                    <li><a href="#">Control de versiones con Git</a></li>
-                    <li><a href="#">Diseño con Flexbox y Grid</a></li>
-                    <li><a href="#">Accesibilidad web (WCAG)</a></li>
-                </ul>
-                <article class="ruta">
-                <h3>Ruta de aprendizaje</h3>
-                <ol>
-                    <li><a href="#">HTML5 y CSS3 (actual)</a></li>
-                    <li><a href="#">JavaScript ES6+</a></li>
-                    <li><a href="#">React.js</a></li>
-                    <li><a href="#">Node.js y Express</a></li>
-                </ol>
-            </article>
-        </section>
+
+            </div>
+        <section class="contenedor-I">
+<div class="contenedor-listas">
+        
+        <article class="bloque-competencias">
+            <h2>Competencias Técnicas</h2>
+            <ul>
+                <li><a href="#">Maquetación responsiva</a></li>
+                <li><a href="#">Control de versiones con Git</a></li>
+                <li><a href="#">Diseño con Flexbox y Grid</a></li>
+                <li><a href="#">Accesibilidad web (WCAG)</a></li>
+            </ul>
+        </article>
+
+        <article class="bloque-ruta">
+            <h3>Ruta de Aprendizaje</h3>
+            <ol>
+                <li><a href="#">HTML5 y CSS3 (actual)</a></li>
+                <li><a href="#">JavaScript ES6+</a></li>
+                <li><a href="#">React.js</a></li>
+                <li><a href="#">Node.js y Express</a></li>
+            </ol>
+        </article>
+
+    </div>
+</section>
 
         <section class="proyectos">
+            <h1>Proyectos</h1>
             <h2>Algunos de mis trabajos</h2>
             <div class="galeria">
                 <figure>
                     <img src="./assets/1.png" alt="notebook">
                     <figcaption>Portafolio V1</figcaption>
                     <p>Primera version del portafolio profesional</p>
-                    <a href=""target="_blank">ver reporsitorio</a>
+                    <a href="target="_blank">ver reporsitorio</a>
                 </figure>
                 <figure>
                     <img src="./assets/2.png" alt="pinturas">
@@ -173,42 +200,47 @@
 <section id="contacto" class="contacto">
     <h2>Envíame un mensaje</h2>
     
-    <form action="#" method="POST">
-        <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
-        </div>
+    <div class="contacto-container">
+        
+        <form action="#" method="POST" class="formulario-contacto">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+            </div>
 
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
-        </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
+            </div>
 
-        <div class="form-group">
-            <label for="asunto">Asunto:</label>
-            <select id="asunto" name="asunto" required>
-                <option value="">Selecciona un asunto</option>
-                <option value="consulta">Consulta</option>
-                <option value="sugerencia">Sugerencia</option>
-                <option value="soporte">Soporte</option>
-            </select>
-        </div>
+            <div class="form-group">
+                <label for="asunto">Asunto:</label>
+                <select id="asunto" name="asunto" required>
+                    <option value="">Selecciona un asunto</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="soporte">Soporte</option>
+                </select>
+            </div>
 
-        <div class="form-group">
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
-        </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+            </div>
 
-        <button type="submit">Enviar Mensaje</button>
-    </form>
-</section>
+            <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+        </form>
 
-    <div class="informacion-contacto">
-        <p><strong>Email:</strong> martin.26burgos@email.com</p>
-        <p><strong>Ubicacion:</strong> Chiguayante, Chile</p>
-        <p><strong>Telefono:</strong> +569 7402 3077</p>
-        <a href="https://github.com/Mebt26/Certamen" target="_blank">github.com/Mebt26</a>
-    </div>
+        <aside class="informacion-contacto">
+            <h3>Información de contacto</h3>
+            <p><strong>Email:</strong> martin.26burgos@email.com</p>
+            <p><strong>Ubicación:</strong> Chiguayante, Chile</p>
+            <p><strong>Teléfono:</strong> +569 7402 3077</p>
+            <div class="enlace-github">
+                <a href="https://github.com/Mebt26/Certamen" target="_blank">github.com/Mebt26</a>
+            </div>
+        </aside>
+    </div> 
 </section>
 
     </main>
