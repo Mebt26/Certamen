@@ -3,13 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Playwrite+NO:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap" rel="stylesheet">
-    <title>Certamen</title>
+    <title>Certamen </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,12 +11,12 @@
     <div class="container">
         <nav class="navbar">
             <ul>
-                <h1 class="circle">MB</h1>
+<h1 class="circle">MB</h1>
                 <li><h3>Martin Burgos Trujillo</h3></li>
-                <li class="letras_navbar">Sobre mí</li>
-                <li class="letras_navbar">Habilidades</li>
-                <li class="letras_navbar">Proyectos</li>
-                <li class="letras_navbar">Contacto</li>
+                <li class="letras_navbar"><a href="#sobre-mi">Sobre mí</a></li>
+                <li class="letras_navbar"><a href="#habilidades">Habilidades</a></li>
+                <li class="letras_navbar"><a href="#proyectos">Proyectos</a></li>
+                <li class="letras_navbar"><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>        
     </div>
@@ -51,14 +45,14 @@
         </div> 
     </section> 
 
-        <section class="sobre-mi">
+        <section id="sobre-mi">
     <h2 class="titulo-sobre-mi">Sobre Mí</h2>
     <p class="subtitulo-conoceme">Conóceme un poco más</p>
 
     <div class="contenedor-grid">
         
         <article class="descripcion-texto">
-            <p>Mi nombre es <strong>Martin Burgos</strong> y soy un estudiante de Inacap...</p>
+            <p>Mi nombre es <strong>Martin Burgos</strong> y soy un estudiante de Inacap que estudia analista programador, siempre me han llamado la atencion los bases de datos y los sitios webs. quiero profundizar en estos ramos para adquirir nuevos conocimientos y experiencias para ver si podre hacer algunas creaciones propias</p>
             
             <blockquote class="cita-autor">
                 "Si siempre estás pensando igual, siempre crearás la misma realidad" — Joe Dispenza
@@ -154,7 +148,7 @@
     </div>
 </section>
 
-        <section class="proyectos">
+        <section id="proyectos">
             <h1>Proyectos</h1>
             <h2>Algunos de mis trabajos</h2>
             <div class="galeria">
@@ -198,22 +192,22 @@
         </section>
 
 <section id="contacto" class="contacto">
-    <h2>Envíame un mensaje</h2>
+    <h1>Contacto</h1>
+    <h3>Envíame un mensaje</h3>
     
-    <div class="contacto-container">
-        
-        <form action="#" method="POST" class="formulario-contacto">
-            <div class="form-group">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
-            </div>
+    <div class="contacto-container">  
+        <form action="#" method="POST" class="formulario">
+            <div class="fila-input">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                </div>
 
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
-            </div>
-
-            <div class="form-group">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
+                </div>
+            </div> <div class="form-group">
                 <label for="asunto">Asunto:</label>
                 <select id="asunto" name="asunto" required>
                     <option value="">Selecciona un asunto</option>
@@ -233,14 +227,26 @@
 
         <aside class="informacion-contacto">
             <h3>Información de contacto</h3>
-            <p><strong>Email:</strong> martin.26burgos@email.com</p>
-            <p><strong>Ubicación:</strong> Chiguayante, Chile</p>
-            <p><strong>Teléfono:</strong> +569 7402 3077</p>
-            <div class="enlace-github">
-                <a href="https://github.com/Mebt26/Certamen" target="_blank">github.com/Mebt26</a>
+            <div class="dato-contacto">
+                <span class="icono">📧</span>
+                <p>martin.26burgos@email.com</p>
             </div>
+            <div class="dato-contacto">
+                <span class="icono">📍</span>
+                <p>Chiguayante, Chile</p>
+            </div>
+            <div class="dato-contacto">
+                <span class="icono">📱</span>
+                <p>+56 9 7402 3077</p>
+            </div>
+            <div class="dato-contacto">
+    <span class="icono">🌐</span>
+    <a href="https://github.com/Mebt26/Certamen" target="_blank" class="enlace-github">
+        github.com/Mebt26
+    </a>
+</div>
         </aside>
-    </div> 
+    </div>
 </section>
 
     </main>
